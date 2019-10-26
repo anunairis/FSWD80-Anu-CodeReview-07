@@ -4,6 +4,7 @@ import { HomePageHeroComponent } from './home-page-hero/home-page-hero.component
 import { HomePageContentComponent } from './home-page-content/home-page-content.component';
 import { AboutPageComponent} from  './about-page/about-page.component';
 import { ToursComponent } from './tours/tours.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,9 @@ const routes: Routes = [
   },
   {
     path: "tours", component: ToursComponent
+  },
+  {
+    path: "contact", component: ContactComponent
   }
 
 ];
