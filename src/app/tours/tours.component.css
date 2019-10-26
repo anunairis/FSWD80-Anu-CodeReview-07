@@ -1,0 +1,15 @@
+#intro {
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+
+}
+h1 {
+    margin-left: 17.5%;
+}
+span {
+    font-size: 1.5rem;
+    margin: 30px 30px 30px 30px;
+
+}

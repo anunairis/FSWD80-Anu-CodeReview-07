@@ -1,0 +1,52 @@
+<nav
+    class="navbar navbar-expand-sm navbar-light fixed-top navbar_style d-flex mt-5 shadow p-3 mb-5 rounded position-absolute">
+    <a class="navbar-brand logo mr-auto ml-5 text-white" routerLink="/"><img src=""> {{projectName}} </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-secondary ml-auto mr-5">
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-white" routerLink="/"><strong>{{heroHome}}</strong></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-white" routerLink="/about"><strong>{{heroNav}}</strong></a>
+            </li>
+
+            <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" href="" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gallery
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="">New releases</a>
+                        <a class="dropdown-item" href="">For rent</a>
+                    </div>
+                </li> -->
+
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-white" routerLink="/tours"><strong>Tours</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-white" routerLink=""><strong>Gallery</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2 text-white" routerLink="/contact"><strong>Contact</strong></a>
+            </li>
+
+
+                <!-- <li class="nav-item nav-flex-icons">
+                <a class="nav-link"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><i class="fab fa-instagram"></i></a>
+            </li> -->
+
+        </ul>
+    </div>
+</nav>

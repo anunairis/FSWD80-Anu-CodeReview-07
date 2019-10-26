@@ -1,0 +1,24 @@
+#intro {
+    height: 98vh;
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img%20%283%29.jpg")no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+}
+#intro:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.1) 80%);
+}
+
+.hero_text {
+    padding: 350px 0px 200px 0px;
+}
+h4 {
+    margin: 0 200px;
+}

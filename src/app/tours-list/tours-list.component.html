@@ -1,0 +1,42 @@
+<h3>Choose your next destonation</h3>
+<span class="">Filter your seach:</span>
+
+<form class="form-inline">
+    <input name="searchInput" class="form-control" placeholder="Search" #searchInput="ngModel" [(ngModel)]="searchText"
+        style="width: 96%;">
+    <button class="btn btn-outline-primary" (click)="searchText=''">x</button>
+</form>
+
+
+
+<div class="row col-lg-12 mb-5">
+    <ng-container *ngFor="let tours of toursArray">
+        <div class="row col-lg-7">
+
+            <div class="card-body">
+                <img src="{{ tours.image }} " alt="" style="height: 250px;" class="col-lg-12">
+            </div>
+        </div>
+
+        <div class="row col-lg-5 d-flex flex-column mt-3" *ngIf="filterCondition(tours)">
+            <h4 class="card-title"> {{ tours.dest }}</h4>
+            <p class="card-text"><strong>Hotel:</strong> {{ tours.hotel }}</p>
+            <p class="card-text"><strong>Nights:</strong> {{ tours.night }}</p>
+            <p class="card-text"><strong>Amenities:</strong> {{ tours.plus }}</p>
+            <button class="btn btn-warning" style="width: 145px;">
+                <p>Book now! </p>
+                <p><strong>{{ tours.price }} EUR</strong></p>
+            </button>
+        </div>
+
+        <div class="row col-lg-12 justify-content-center">
+
+            <button class="btn btn-success" style="width: 125px;"
+                (click)="toursService.populateForm(tours)">Edit</button>
+
+            <button class="btn btn-danger" style="width: 75px;" (click)="onDelete(tours.$key)">Delete</button>
+        </div>
+    </ng-container>
+
+</div>
+<div class="alert alert-danger" *ngIf="showDeletedMessage">Deleted successfully</div>
